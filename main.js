@@ -99,16 +99,6 @@ function scrollToSections() {
   });
 
 
-  const trailerContent = $('div#trailer-content').offset().top - 100
-  $('a#trailer').on('click', function () {
-    $('html, body').animate({
-      scrollTop: trailerContent
-    },
-      1000
-    );
-    return false;
-  });
-
   const prensaContent = $('div#prensa-content').offset().top - 100
   $('a#prensa').on('click', function () {
     $('html, body').animate({
