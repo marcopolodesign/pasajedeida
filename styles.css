@@ -259,7 +259,7 @@ nav a,
   position: sticky;
   position: -webkit-sticky;
   top: 10px;
-
+  z-index: 10;
   max-width: 1200px;
   padding: 17px 40px;
 }
@@ -456,6 +456,118 @@ a.ver-episodios:hover {
   background-color: #fff;
 }
 
+
+.menu-mobile-container {
+  background-color: #5c0a36;
+  z-index: 9;
+  opacity: 0;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
+  padding-top: 30vh;
+  
+}
+
+svg.menu-trigger-svg line {
+  stroke: #fff;
+}
+
+a.no-color:hover, a.no-color:active, a.no-color{
+  color: rgba(255, 255, 255, 0) !important;
+}
+
+.menu-mobile-nav  a {
+  color: white !important;
+  font-size: 7.5vw;
+  margin-bottom: 30px;
+  padding: 0;
+  line-height: 0.9;
+  display: block;
+}
+
+.menu-mobile-directions a {
+  line-height: 1.6;
+  display: inline-block;
+}
+
+.menu-mobile-subnav svg {
+  width: 40;
+  fill: #fff !important;
+}
+
+.h-100vh {
+  height: 100vh;
+}
+
+.pointer-all {
+  pointer-events: all;
+}
+
+.active-trigger {
+  z-index: 9;
+ opacity: 1;
+
+}
+
+.menu-trigger-svg line {
+  stroke: #5c0a36;
+}
+
+.no-background {
+  background-color: #fff0 !important;
+}
+
+path.violet-fill {
+  fill: #5c0a36 ;
+}
+
+.violet-line line {
+  stroke: #5c0a36 ;
+}
+
+
+
+.menu-trigger {
+  width: 28px;
+}
+
+.menu-trigger-svg {
+  width: 40px;
+}
+
+
+
+
+.z-99 {
+  z-index: 99;
+}
+
+path.white-fill {
+  fill: rgb(255, 255, 255) !important;
+}
+
+.white-line line {
+  stroke: #fff !important;
+}
+
+
+@media (min-width: 960px) {
+  .mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .desktop {
+    display: none;
+  }
+
+}
 @media (max-width: 414px) {
   .header-inner nav {
     display: none;

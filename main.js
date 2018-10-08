@@ -18,6 +18,7 @@ function changeHeader() {
       headerInner.style.padding = ' 13px 25px';
 
       $('.social svg path').css('fill', '#5C0A36');
+      $('svg.menu-trigger-svg line').css('stroke', "#5C0A36");
 
 
 
@@ -30,10 +31,33 @@ function changeHeader() {
       $('.social svg path').css('fill', '');
       headerInner.style.padding = '';
       $('.logo svg').css('width', '');
+      $('svg.menu-trigger-svg line').css('stroke', "#fff");
+
 
 
 
     }
+  });
+}
+
+function openNav() {
+  $(document).ready(function () {
+    const trigger = document.querySelector('svg.menu-trigger-svg');
+    const menuMobile = document.querySelector('.menu-mobile-container');
+
+
+    $(trigger).on('click', function () {
+      $('.header-inner').css('background-color', '');
+      $(menuMobile).toggleClass('active-trigger');
+      $(menuMobile).toggleClass('pointer-all');
+      $('header').toggleClass('no-background');
+      $('svg.logo path').toggleClass('white-fill');
+      $(trigger).toggleClass('white-line');
+      $('.logo svg path').css('fill', '');
+
+
+
+    });
   });
 }
 
@@ -118,4 +142,5 @@ $(window).on("load", function () {
   scrollToSections();
   changeBackgroundColor();
   progressBar();
+  openNav();
 });
