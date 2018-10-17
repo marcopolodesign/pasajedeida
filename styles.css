@@ -228,6 +228,12 @@ p {
   color: #fbbd01;
 }
 
+.bg-pasaje-yellow {
+  background-color: #fbbd01
+}
+
+
+
 .container {
   max-width: 720px;
   padding-left: 60px;
@@ -312,6 +318,7 @@ nav a {
   color: #fff;
   font-weight: 500;
 }
+
 .logo-container {
   width: 50%;
 }
@@ -424,7 +431,7 @@ a:hover {
   display: none !important;
 }
 
-.progress{
+.progress {
   height: 100%;
   background-color: rgb(255, 241, 197);
   z-index: 999999;
@@ -433,6 +440,10 @@ a:hover {
 
 .bg-violet-pasaje {
   background-color: #5c0a36;
+}
+
+.violet-pasaje {
+  color: #5c0a36;
 }
 
 .downloads-inner a {
@@ -464,18 +475,20 @@ a.ver-episodios:hover {
   transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
   pointer-events: none;
   padding-top: 30vh;
-  
+
 }
 
 svg.menu-trigger-svg line {
   stroke: #fff;
 }
 
-a.no-color:hover, a.no-color:active, a.no-color{
+a.no-color:hover,
+a.no-color:active,
+a.no-color {
   color: rgba(255, 255, 255, 0) !important;
 }
 
-.menu-mobile-nav  a {
+.menu-mobile-nav a {
   color: white !important;
   font-size: 7.5vw;
   margin-bottom: 30px;
@@ -504,7 +517,7 @@ a.no-color:hover, a.no-color:active, a.no-color{
 
 .active-trigger {
   z-index: 9;
- opacity: 1;
+  opacity: 1;
 
 }
 
@@ -517,11 +530,11 @@ a.no-color:hover, a.no-color:active, a.no-color{
 }
 
 path.violet-fill {
-  fill: #5c0a36 ;
+  fill: #5c0a36;
 }
 
 .violet-line line {
-  stroke: #5c0a36 ;
+  stroke: #5c0a36;
 }
 
 
@@ -568,6 +581,7 @@ path.white-fill {
   }
 
 }
+
 @media (max-width: 414px) {
   .header-inner nav {
     display: none;
@@ -630,7 +644,7 @@ path.white-fill {
     margin-bottom: 30px;
   }
 
-  .downloads-inner > div {
+  .downloads-inner>div {
     padding-top: 1vh;
     padding-bottom: 1vh;
   }
